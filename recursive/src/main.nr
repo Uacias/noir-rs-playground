@@ -1,5 +1,5 @@
-global HONK_VK_SIZE: u32 = 6;
-global HONK_PROOF_SIZE: u32 = 6;
+global HONK_VK_SIZE: u32 = 112;
+global HONK_PROOF_SIZE: u32 = 456;
 global HONK_IDENTIFIER: u32 = 1;
 fn main(
     proof: [Field; HONK_PROOF_SIZE],
