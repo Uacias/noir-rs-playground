@@ -1,12 +1,15 @@
 [package]
 name = "rust-proof"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-noir_rs = { git = "https://github.com/zkpassport/noir_rs.git", tag = "v1.0.0-beta.3-1", features = [
+
+noir = { git = "https://github.com/zkmopro/noir-rs", features = [
     "barretenberg",
 ] }
+garaga_rs = { git = "https://github.com/keep-starknet-strange/garaga.git", tag = "v0.18.1" }
 
-log = "0.4"        # do prostego logowania czasu
-env_logger = "0.9" # inicjalizacja loggera
+log = "0.4"       
+env_logger = "0.9" 
+serde_json = "1.0.140"
